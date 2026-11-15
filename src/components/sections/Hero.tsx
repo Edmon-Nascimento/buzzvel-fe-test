@@ -79,7 +79,7 @@ export function Hero() {
 
           <a
             href="#categories"
-            className="mt-3 inline-flex items-center justify-center bg-white px-7 py-4 text-sm font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 w-full rounded-lg border border-black/20"
+            className="mt-3 inline-flex items-center justify-center bg-white px-7 py-4 text-sm font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 w-full rounded-lg border border-black/20 hover:bg-gray-50/10"
           >
             <span className="font-semibold">See how it works</span>
           </a>
