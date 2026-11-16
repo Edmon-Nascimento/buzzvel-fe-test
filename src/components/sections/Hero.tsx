@@ -1,16 +1,22 @@
+
 import Image from "next/image";
 
 export function Hero() {
   return (
     <section className="relative overflow-hidden bg-[#F9F8F3]">
-      <div className="mx-auto flex max-w-7xl flex-col px-6 pb-12 pt-10 md:flex-row md:items-center md:gap-12 md:px-10 md:py-20 lg:px-16">
-        <div className="relative mx-auto mt-12 w-full max-w-md md:mt-0 md:flex-1 md:max-w-none">
+      <div className="mx-auto flex max-w-7xl flex-col px-6 pb-12 pt-10 md:flex-row-reverse md:items-center md:gap-12 md:px-10 md:py-20 lg:px-16">
+
+        {/* Hero visual */}
+        <div className="relative mx-auto mt-12 w-full max-w-md md:mt-0 md:max-w-none md:flex-1">
+
           {/* Decorative background */}
           <div
             aria-hidden="true"
             className="absolute -right-4 top-4 h-[92%] w-full rounded-4xl bg-[#FFC99F]"
           />
-          <div className="relative aspect-4/5 w-full overflow-hidden rounded-4xl bg-[#f1f3ff] ">
+
+          {/* Main image */}
+          <div className="relative aspect-4/5 w-full overflow-hidden rounded-4xl bg-[#f1f3ff]">
             <Image
               src="/assets/hero-person.png"
               alt="Student learning and developing new skills"
@@ -21,18 +27,20 @@ export function Hero() {
             />
           </div>
 
+          {/* Courses badge */}
           <div className="absolute -left-3 top-5 flex items-center gap-3 rounded-2xl bg-white p-3 shadow-lg sm:-left-6 sm:p-4">
             <div>
-              <p className="text-sm ">
-                <span className="px-1 py-1 rounded-lg mr-3 font-bold text-[#3157F6] bg-blue-100">
-                  120+{" "}
+              <p className="text-sm">
+                <span className="mr-3 rounded-lg bg-blue-100 px-1 py-1 font-bold text-[#3157F6]">
+                  120+
                 </span>
                 expert-led courses
               </p>
             </div>
           </div>
 
-          <div className="absolute -right-3 bottom-5 flex items-center gap-3 rounded-2xl bg-white p-3 shadow-lg sm:-left-6 sm:p-4">
+          {/* Rating badge */}
+          <div className="absolute -right-3 bottom-5 flex items-center gap-3 rounded-2xl bg-white p-3 shadow-lg">
             <div>
               <div className="flex items-center gap-1">
                 {Array.from({ length: 5 }).map((_, index) => (
@@ -46,7 +54,7 @@ export function Hero() {
                   />
                 ))}
 
-                <p className="mt-1 ml-3 text-sm text-[#191c2b]">
+                <p className="ml-3 mt-1 text-sm text-[#191c2b]">
                   4.9 avg rating
                 </p>
               </div>
@@ -56,7 +64,8 @@ export function Hero() {
 
         {/* Hero content */}
         <div className="relative z-10 flex flex-1 flex-col items-start">
-          <span className="mt-10 py-2 text-sm font-medium text-blue-600 uppercase tracking-wide">
+
+          <span className="mt-10 py-2 text-sm font-medium uppercase tracking-wide text-blue-600">
             Learn at your own pace
           </span>
 
@@ -64,28 +73,32 @@ export function Hero() {
             Build skills that actually move you forward.
           </h1>
 
-          <p className="mt-6 leading-relaxed text-[#747783] text-[15px]">
+          <p className="mt-6 text-[15px] leading-relaxed text-[#747783] md:text-xl">
             Practical courses taught by people who do the work every day. Learn
             design, technology, business and more — one focused lesson at a
             time.
           </p>
 
-          <a
-            href="#categories"
-            className="mt-8 inline-flex items-center justify-center bg-[#3457f6] px-7 py-4 text-sm font-semibold transition-colors hover:bg-blue-700 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600 w-full rounded-lg"
-          >
-            <span className="text-white font-semibold">Explore courses</span>
-          </a>
+          {/* Hero actions */}
+          <div className="mt-8 flex w-full flex-col gap-3 sm:flex-row">
+            <a
+              href="#categories"
+              className="inline-flex min-h-12 flex-1 items-center justify-center rounded-lg bg-[#3457F6] px-6 text-sm font-semibold text-white transition-colors hover:bg-blue-700 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600"
+            >
+              <span className="text-white">Explore courses</span>
+            </a>
 
-          <a
-            href="#categories"
-            className="mt-3 inline-flex items-center justify-center bg-white px-7 py-4 text-sm font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 w-full rounded-lg border border-black/20 hover:bg-gray-50/10"
-          >
-            <span className="font-semibold">See how it works</span>
-          </a>
+            <a
+              href="#process"
+              className="inline-flex min-h-12 flex-1 items-center justify-center rounded-lg border border-black/20 bg-white px-6 text-sm font-semibold text-[#191c2b] transition-colors hover:bg-gray-50 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600"
+            >
+              See how it works
+            </a>
+          </div>
 
           {/* Social proof */}
-          <div className="mt-7 flex items-center gap-3 self-center">
+          <div className="mt-7 flex items-center gap-3 self-center md:self-start">
+
             {/* Avatars */}
             <div className="flex items-center">
               <Image

@@ -2,11 +2,13 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 const navigationLinks = [
   { label: "Courses", href: "#categories" },
-  { label: "How it works", href: "#process" },
+  { label: "For Teams", href: "#contact" },
   { label: "Community", href: "#community" },
+  { label: "About", href: "#process" },
 ];
 
 export function Header() {
@@ -15,10 +17,13 @@ export function Header() {
   return (
     <header className="site-header">
       <div className="header-content">
-        <a className="brand" href="#" aria-label="Luma home">
-          luma.
-        </a>
 
+        {/* Logo */}
+        <Link className="brand" href="/" aria-label="Luma home">
+          luma.
+        </Link>
+
+        {/* Mobile menu button */}
         <button
           className="menu-toggle"
           type="button"
@@ -27,11 +32,12 @@ export function Header() {
           aria-controls="main-navigation"
           onClick={() => setMenuOpen((open) => !open)}
         >
-          <span />
-          <span />
-          <span />
+          <span aria-hidden="true" />
+          <span aria-hidden="true" />
+          <span aria-hidden="true" />
         </button>
 
+        {/* Navigation */}
         <nav
           id="main-navigation"
           className={`main-navigation ${menuOpen ? "is-open" : ""}`}
@@ -47,6 +53,18 @@ export function Header() {
             </a>
           ))}
         </nav>
+
+        {/* Desktop actions */}
+        <div className="header-actions">
+          <Link href="/login" className="login-link">
+            Log in
+          </Link>
+
+          <a href="#categories" className="header-cta">
+            Start learning
+          </a>
+        </div>
+
       </div>
     </header>
   );
