@@ -87,10 +87,7 @@ img {
    ACCESSIBILITY
 ======================================== */
 
-:focus-visible {
-  outline: 3px solid var(--primary);
-  outline-offset: 4px;
-}
+
 
 /* ========================================
    HEADER

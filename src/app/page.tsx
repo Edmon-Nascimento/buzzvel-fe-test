@@ -4,6 +4,7 @@ import { Categories } from "@/components/sections/Categories";
 import { FeaturedCourse } from "@/components/sections/FeaturedCourse";
 import { LearningProcess } from "@/components/sections/LearningProcess";
 import { Community } from "@/components/sections/Community";
+import { Contact } from "@/components/sections/Contact";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <FeaturedCourse />
         <LearningProcess />
         <Community />
+        <Contact />
       </main>
     </>
   );
