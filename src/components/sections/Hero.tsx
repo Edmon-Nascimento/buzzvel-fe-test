@@ -9,19 +9,30 @@ export function Hero() {
           {/* Decorative background */}
           <div
             aria-hidden="true"
-            className="absolute -right-4 top-4 h-[92%] w-full rounded-4xl bg-[#FFC99F]"
+            className="absolute -right-4 sm:-right-10 top-4 h-[92%] w-full rounded-4xl bg-[#FFC99F]"
+          />
+
+          <div
+            aria-hidden="true"
+            className="sm:invisible md:visible absolute -left-12 bottom-4 h-[20%] w-full rounded-full bg-[#E2E8FF]"
           />
 
           {/* Main image */}
           <div className="relative aspect-4/5 w-full overflow-hidden rounded-4xl bg-[#f1f3ff]">
-            <Image
-              src="/assets/hero-person.png"
-              alt="Student learning and developing new skills"
-              fill
-              priority
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover"
-            />
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcSet="/assets/hero-person-lg.png"
+              />
+              <Image
+                src="/assets/hero-person.png"
+                alt="Student learning and developing new skills"
+                fill
+                priority
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover"
+              />
+            </picture>
           </div>
 
           {/* Courses badge */}
