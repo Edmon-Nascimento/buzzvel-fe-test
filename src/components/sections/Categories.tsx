@@ -1,10 +1,8 @@
-
 const categories = [
   {
     number: "01",
     title: "Product Design",
-    description:
-      "Turn to complex problems into clear useful experiences.",
+    description: "Turn to complex problems into clear useful experiences.",
     href: "#product-design",
   },
   {
@@ -24,8 +22,7 @@ const categories = [
   {
     number: "04",
     title: "Creative",
-    description:
-      "Explore new ways to communicate, create and tell stories.",
+    description: "Explore new ways to communicate, create and tell stories.",
     href: "#creative",
   },
 ];
@@ -50,7 +47,8 @@ export function Categories() {
           </div>
 
           <p className="max-w-xl text-base leading-8 text-[#747783] sm:text-xl md:pb-1">
-            Short, pratical courses designed around skills you can put to work immediately.
+            Short, pratical courses designed around skills you can put to work
+            immediately.
           </p>
         </div>
 

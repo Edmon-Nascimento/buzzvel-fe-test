@@ -61,7 +61,10 @@ export function Community() {
           </h2>
 
           <p className="mt-5 text-sm leading-7 text-[#747783] sm:text-base sm:leading-8 lg:mt-6 lg:max-w-117.5 lg:text-[16px]">
-            Morbi sit egestas dignissim pharetra, sed amet. Tempus justo senectus risus ac vel, velit, nunc. Eget commodo eget in aliquam facilisi facilisi nec magna hendrerit. Placerat ipsum sit tellus urna, faucibus aenean lorem faucibus integer.
+            Morbi sit egestas dignissim pharetra, sed amet. Tempus justo
+            senectus risus ac vel, velit, nunc. Eget commodo eget in aliquam
+            facilisi facilisi nec magna hendrerit. Placerat ipsum sit tellus
+            urna, faucibus aenean lorem faucibus integer.
           </p>
 
           <a

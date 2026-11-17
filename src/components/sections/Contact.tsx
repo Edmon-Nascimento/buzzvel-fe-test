@@ -46,7 +46,9 @@ export function Contact() {
           </h2>
 
           <p className="mt-5 text-base leading-8 text-[#747783] sm:text-lg lg:mt-6">
-            Have a question? We’re here to help. Whether you’re looking for the right course, learning with your team or interested in teaching with Luma, we’d love to hear from you.
+            Have a question? We’re here to help. Whether you’re looking for the
+            right course, learning with your team or interested in teaching with
+            Luma, we’d love to hear from you.
           </p>
 
           <div className="mt-10 space-y-4 lg:mt-14">
@@ -79,9 +81,7 @@ export function Contact() {
               </div>
 
               <div>
-                <p className="text-sm text-[#191c2b]">
-                  Response time
-                </p>
+                <p className="text-sm text-[#191c2b]">Response time</p>
                 <p className="mt-2 text-sm text-[#747783]">
                   Up to 24 hours on business days
                 </p>

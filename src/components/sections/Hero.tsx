@@ -1,14 +1,11 @@
-
 import Image from "next/image";
 
 export function Hero() {
   return (
     <section className="relative overflow-hidden bg-[#F9F8F3]">
       <div className="mx-auto flex max-w-7xl flex-col px-6 pb-12 pt-10 md:flex-row-reverse md:items-center md:gap-12 md:px-10 md:py-20 lg:px-16">
-
         {/* Hero visual */}
         <div className="relative mx-auto mt-12 w-full max-w-md md:mt-0 md:max-w-none md:flex-1">
-
           {/* Decorative background */}
           <div
             aria-hidden="true"
@@ -64,7 +61,6 @@ export function Hero() {
 
         {/* Hero content */}
         <div className="relative z-10 flex flex-1 flex-col items-start">
-
           <span className="mt-10 py-2 text-sm font-medium uppercase tracking-wide text-blue-600">
             Learn at your own pace
           </span>
@@ -98,7 +94,6 @@ export function Hero() {
 
           {/* Social proof */}
           <div className="mt-7 flex items-center gap-3 self-center md:self-start">
-
             {/* Avatars */}
             <div className="flex items-center">
               <Image

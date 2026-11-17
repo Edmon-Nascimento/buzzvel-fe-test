@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import Link from "next/link";
 
@@ -35,10 +34,8 @@ export function Footer() {
   return (
     <footer className="w-full bg-[#171a2b] text-white">
       <div className="mx-auto w-[calc(100%-30px)] max-w-10/12 pt-13.5 pb-5.5 sm:w-[calc(100%-48px)] sm:pt-15 sm:pb-8 lg:pt-19 lg:pb-10">
-
         {/* Main content */}
         <div className="grid grid-cols-1 gap-12 pb-9.5 sm:gap-11 sm:pb-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-12 lg:pb-16.5">
-
           {/* Brand */}
           <div className="flex flex-col items-start">
             <Link
@@ -69,9 +66,7 @@ export function Footer() {
               <div
                 key={section.title}
                 className={
-                  section.title === "SUPPORT"
-                    ? "col-span-2 lg:col-span-1"
-                    : ""
+                  section.title === "SUPPORT" ? "col-span-2 lg:col-span-1" : ""
                 }
               >
                 <h3 className="mb-4.5 font-sans text-xs font-semibold tracking-[1.5px] text-[#e6e7ed]">
@@ -98,10 +93,9 @@ export function Footer() {
         {/* Copyright */}
         <div className="flex min-h-11.25 items-center justify-center border-t border-[#414453] pt-6 sm:justify-start">
           <p className="font-sans text-center text-[13px] text-[#e0e1e8]">
-            © {new Date().getFullYear()} Luma Learning
+            © 2026 Luma Learning
           </p>
         </div>
-
       </div>
     </footer>
   );

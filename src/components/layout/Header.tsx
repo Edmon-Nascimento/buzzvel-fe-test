@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState } from "react";
@@ -17,7 +16,6 @@ export function Header() {
   return (
     <header className="site-header">
       <div className="header-content">
-
         {/* Logo */}
         <Link className="brand" href="/" aria-label="Luma home">
           luma.
@@ -66,7 +64,6 @@ export function Header() {
             </a>
           </button>
         </div>
-
       </div>
     </header>
   );
