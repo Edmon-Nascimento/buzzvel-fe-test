@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 import { useState } from "react";
 import Link from "next/link";
@@ -30,9 +31,12 @@ export function Header() {
           aria-controls="main-navigation"
           onClick={() => setMenuOpen((open) => !open)}
         >
-          <span aria-hidden="true" />
-          <span aria-hidden="true" />
-          <span aria-hidden="true" />
+          <Image 
+            src="/assets/menu-icon.png"
+            alt="Menu-icon"
+            width={15}
+            height={15}
+          />
         </button>
 
         {/* Navigation */}
