@@ -49,7 +49,7 @@ export function Header() {
               href={link.href}
               onClick={() => setMenuOpen(false)}
             >
-              {link.label}
+              <span className="text-[15px] font-light ">{link.label}</span>
             </a>
           ))}
         </nav>
@@ -57,12 +57,14 @@ export function Header() {
         {/* Desktop actions */}
         <div className="header-actions">
           <Link href="/login" className="login-link">
-            Log in
+            <span className="text-[#656770] text-[17px]">Log in</span>
           </Link>
 
-          <a href="#categories" className="header-cta">
-            Start learning
-          </a>
+          <button className="bg-[#3157F6] text-white rounded-lg px-5 py-3">
+            <a href="#categories" className="header-cta font-bold">
+              Start learning
+            </a>
+          </button>
         </div>
 
       </div>

@@ -46,9 +46,7 @@ export function Contact() {
           </h2>
 
           <p className="mt-5 text-base leading-8 text-[#747783] sm:text-lg lg:mt-6">
-            Have a question? We're here to help. Whether you're looking for the
-            right course, learning with yout team or interested in teaching with
-            Luma, we'd love to hear from you.
+            Have a question? We’re here to help. Whether you’re looking for the right course, learning with your team or interested in teaching with Luma, we’d love to hear from you.
           </p>
 
           <div className="mt-10 space-y-4 lg:mt-14">
@@ -150,7 +148,7 @@ export function Contact() {
                 htmlFor="message"
                 className="mb-2 block text-sm font-semibold text-[#191c2b]"
               >
-                Your message
+                Your question
               </label>
 
               <textarea

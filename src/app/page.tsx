@@ -5,6 +5,7 @@ import { FeaturedCourse } from "@/components/sections/FeaturedCourse";
 import { LearningProcess } from "@/components/sections/LearningProcess";
 import { Community } from "@/components/sections/Community";
 import { Contact } from "@/components/sections/Contact";
+import { FinalCTA } from "@/components/sections/FinalCTA";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <LearningProcess />
         <Community />
         <Contact />
+        <FinalCTA />
       </main>
     </>
   );
